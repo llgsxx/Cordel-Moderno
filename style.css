@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+:root {
+    --fonte1: verdana, Geneva, tahoma, sans-serif;
+    --fonte2: 'Passion one', Cursive;
+    --fonte3: 'Sriracha', Cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Adicionando box-sizing para lidar melhor com paddings e borders */
+}
+
+html, body {
+    background-color: white;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 10vh; /* 5% da altura da tela */
+    padding-bottom: 5vh; /* 5% da altura da tela */
+}
+
+header h1 {
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 5vw; /* Tamanho da fonte como 5% da largura da tela */
+    margin-bottom: 1vh; /* Margem inferior de 1% da altura da tela */
+}
+
+header p {
+    margin-bottom: 3vh; /* Margem inferior de 3% da altura da tela */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+
+    padding-left: 5vw; /* 5% da largura da tela */
+    padding-right: 5vw; /* 5% da largura da tela */
+    line-height: 2em;
+    font-family: var(--fonte3);
+    font-size: 2.5vw; /* Tamanho da fonte como 2.5% da largura da tela */
+}
+section:last-child {
+    margin-bottom: 0; /* Removendo a margem inferior do último elemento <section> */
+}
+
+section p {
+    margin-bottom: 3em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+    font-size: cover;
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.068);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.466);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem p {
+    background-color: rgba(0, 0, 0, 0.096);
+    padding: 20px;
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
